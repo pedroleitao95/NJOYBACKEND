@@ -1,0 +1,29 @@
+
+<div id="new-quizz">
+  <a id="create-quizz" mat-raised-button>Create Quizz</a>
+</div>
+<br>
+<mat-list>
+  <mat-list-item *ngFor="let quizz of quizzes" style="height:auto;">
+    <mat-card style="width: 100%;">
+      <mat-card-header>
+        <h3 class="title">My first quizz</h3>
+      </mat-card-header>
+
+      <img mat-card-image src="https://www.lifewire.com/thmb/Yied_guYYmYuTTIPXDpxr0DRpdY=/1532x1179/filters:no_upscale()/Padding-5ada00eb1d640400390ccf6d.jpg"
+        alt="">
+      <mat-card-content>
+        <span class="space"></span>
+        <p class="mat-body-1">Lorem ipsum kasmd aksdmk askd maksdm kasmd kasm d</p>
+      </mat-card-content>
+
+      <mat-card-actions style="text-align: right;">
+
+          <a mat-raised-button [routerLink]="['edit']">Edit</a>
+          <span class="space-left"></span>
+          <button mat-raised-button (click)="onDelete()">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-divider mat-inset></mat-divider>
+  </mat-list-item>
+</mat-list>

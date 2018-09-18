@@ -1,0 +1,32 @@
+mat-list {
+  margin: auto;
+  width: 80%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.space {
+  margin-right: 5%;
+}
+
+mat-card img {
+  width: 30%;
+  margin: auto;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+}
+
+.space-left {
+  margin-left: 1rem;
+}
+
+#new-quizz {
+  margin: auto;
+  text-align: center;
+}
+
+#create-quizz {
+  width: 60%;
+}

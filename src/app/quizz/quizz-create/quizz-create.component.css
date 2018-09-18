@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card {
+  margin-top: 4rem;
+}

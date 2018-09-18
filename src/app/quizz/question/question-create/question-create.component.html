@@ -1,0 +1,31 @@
+<mat-card>
+  <div class="container">
+    <mat-form-field>
+      <input matInput placeholder="Title">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Question"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Question Type">
+        <mat-option *ngFor="let type of questionTypes" [value]="type">{{type}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </div>
+    <p>Lixo: {{choosenQuestionType}}</p>
+      <span [ngSwitch]="choosenQuestionType">
+      <ol type="a" *ngSwitchCase="questionTypes[0]">
+            <li>teste</li>
+            <li>teste</li>
+            <li>teste</li>
+            <button mat-button (click)="addChoice()">Action</button>
+      </ol>
+      <p *ngSwitchCase="questionTypes[1]">
+          Truth/False
+      </p>
+      <p *ngSwitchDefault>
+          Open writing
+      </p>
+      </span>
+</mat-card>
